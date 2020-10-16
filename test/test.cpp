@@ -15,7 +15,7 @@ TEST_CASE("Test Difference")
 
 TEST_CASE("Test Multiplication")
 {
-    float expected = 6;
+    float expected = 8;
     REQUIRE(expected == multiP(2, 4));
 }
 
