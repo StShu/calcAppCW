@@ -21,7 +21,7 @@ test: $(BUILD_DIR)/functions.o $(BUILD_DIR)/test.o
 	g++ $(FLAGS) $(BUILD_DIR)/test.o $(BUILD_DIR)/functions.o -o $(BIN_DIR)/test
 
 $(BUILD_DIR)/test.o:
-	g++ $(FLAGS) $(BUILD_DIR)/test.o $(BUILD_DIR)/functions.o -o $(BIN_DIR)/test
+	g++ $(FLAGS) -c $(TEST_DIR)/test.cpp -o $(BUILD_DIR)/test.o
 	
 	
 run: 
