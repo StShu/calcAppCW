@@ -5,5 +5,5 @@ using namespace std;
 
 int main()
 {
-	cout << sum(20.0,10.4);
+    cout << sum(1.5, 2);
 }

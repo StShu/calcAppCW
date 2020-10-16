@@ -8,11 +8,15 @@ FLAGS =-Wall -std=c++11
 
 all: $(BIN_DIR)/main
 
-$(BIN_DIR)/main: $(BUILD_DIR)/calcApp.o
-	g++ $(FLAGS) $(BUILD_DIR)/calcApp.o -o $(BIN_DIR)/main
+$(BIN_DIR)/main: $(BUILD_DIR)/calcApp.o $(BUILD_DIR)/functions.o
+	g++ $(FLAGS) $(BUILD_DIR)/calcApp.o -o $(BUILD_DIR)/functions.o -o $(BIN_DIR)/main
 
 $(BUILD_DIR)/calcApp.o:
 	g++ $(FLAGS) -c $(SRC_DIR)/calcApp.cpp -o $(BUILD_DIR)/calcApp.o
+	
+$(BUILD_DIR)/functions.o:
+	g++ $(FLAGS) -c $(SRC_DIR)/functions.cpp -o $(BUILD_DIR)/functions.o
+	
 	
 run: 
 	./bin/main
