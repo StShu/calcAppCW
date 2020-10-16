@@ -26,7 +26,11 @@ $(BUILD_DIR)/test.o:
 	
 run: 
 	./bin/main
+	
+runtest:
+	./bin/test
 
 clean:
 	rm -f build/*.o
 	rm -f bin/main
+	rm -f bin/test
