@@ -2,7 +2,7 @@
 
 BIN_DIR = ./bin
 BUILD_DIR = ./build
-SRC_DIR = ./lab1
+SRC_DIR = ./calcApp
 TEST_DIR = ./test
 FLAGS =-Wall -std=c++11
 
