@@ -1,6 +1,9 @@
 ﻿#include <iostream>
+#include "functions.h"
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	cout << sum(20.0,10.4);
 }
