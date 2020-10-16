@@ -4,6 +4,6 @@
 
 TEST_CASE("test1")
 {
-    float expected_bull = 6;
+    float expected_bull = 8;
     REQUIRE(expected_bull == sum(2, 4));
 }
