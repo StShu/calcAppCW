@@ -92,7 +92,7 @@ int menu_math()
             coutF(x, y, oper, pow(x, y));
             break;
         case '!':
-           cout << x << "! =" <<fact(x);
+            cout << x << "! =" << fact(x);
             break;
         default:
             cout << "Не верная команда!" << endl;
