@@ -33,7 +33,7 @@ int menu_math()
 {
     float x, y;
     char oper;
-    while (true) {
+    while (true){
         cout << "Доступные операции +,-,/,*,^" << endl;
         cout << "Пример ввода 10 + 5 " << endl;
         cout << "Введите пример: ";
