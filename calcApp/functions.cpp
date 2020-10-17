@@ -27,16 +27,13 @@ void coutF(float x, float y, char oper, float z)
     cout.setf(ios::fixed);
     cout.precision(3);
     cout << x << oper << y << " = " << z;
-    //return " = " + printf("%.2f", x) +oper + to_string(y) + " = ";
 }
 
 int menu_math()
 {
     float x, y;
     char oper;
-    while (true) 
-    {
-        
+    while (true) {
         cout << "Доступные операции +,-,/,*,^" << endl;
         cout << "Пример ввода 10 + 5 " << endl;
         cout << "Введите пример: ";
@@ -52,7 +49,7 @@ int menu_math()
             coutF(x, y, oper, divs(x, y));
             break;
         case '-':
-           coutF(x, y, oper, diff(x, y));
+            coutF(x, y, oper, diff(x, y));
             break;
         case '^':
             coutF(x, y, oper, pow(x, y));
@@ -65,7 +62,8 @@ int menu_math()
         cout << "\n Повторить? y/n" << endl;
         cin >> oper;
 
-        if (oper == 'n') break;
+        if (oper == 'n')
+            break;
         system("cls");
     }
     return 0;

@@ -17,7 +17,6 @@ int main()
             break;
         case 2:
             system("cls");
-            //menu_trig();
             break;
         case 0:
             return 0;
