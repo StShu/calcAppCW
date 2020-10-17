@@ -2,26 +2,6 @@
 #include <sstream>
 #define PI 3.14159265
 
-float sum(float x, float y)
-{
-    return x + y;
-}
-
-float diff(float x, float y)
-{
-    return x - y;
-}
-
-float multiP(float x, float y)
-{
-    return x * y;
-}
-
-float divs(float x, float y)
-{
-    return x / y;
-}
-
 void coutF(float x, float y, char oper, float z)
 {
     cout.setf(ios::fixed);
@@ -29,15 +9,72 @@ void coutF(float x, float y, char oper, float z)
     cout << x << oper << y << " = " << z;
 }
 
+/// <summary>
+/// Сумма двух числе
+/// </summary>
+/// <param name="x"> 1 слфгаемое </param>
+/// <param name="y"> 2 слфгаемое </param>
+/// <returns> сумма двух чисел </returns>
+float sum(float x, float y)
+{
+    return x + y;
+}
+
+/// <summary>
+/// Разность двух чисел
+/// </summary>
+/// <returns> Разность </returns>
+float diff(float x, float y)
+{
+    return x - y;
+}
+
+/// <summary>
+/// Умножение
+/// </summary>
+/// <returns></returns>
+float multiP(float x, float y)
+{
+    return x * y;
+}
+
+/// <summary>
+/// Частное
+/// </summary>
+/// <returns></returns>
+float divs(float x, float y)
+{
+    return x / y;
+}
+
+/// <summary>
+/// Факториал
+/// </summary>
+/// <returns></returns>
+int fact(int x)
+{
+    if (x == 0)
+        return 1;
+    else
+        return x * fact(x - 1);
+}
+
+/// <summary>
+/// Меню простых функций
+/// </summary>
+/// <returns></returns>
 int menu_math()
 {
     float x, y;
     char oper;
     while (true) {
-        cout << "Доступные операции +,-,/,*,^" << endl;
+        cout << "Доступные операции +,-,/,*,^,!" << endl;
         cout << "Пример ввода 10 + 5 " << endl;
         cout << "Введите пример: ";
-        cin >> x >> oper >> y;
+        cin >> x;
+        cin >> oper;
+        if (oper != '!')
+            cin >> y;
         switch (oper) {
         case '*':
             coutF(x, y, oper, multiP(x, y));
@@ -54,6 +91,9 @@ int menu_math()
         case '^':
             coutF(x, y, oper, pow(x, y));
             break;
+        case '!':
+           cout << x << "! =" <<fact(x);
+            break;
         default:
             cout << "Не верная команда!" << endl;
             break;
@@ -69,6 +109,11 @@ int menu_math()
     return 0;
 }
 
+
+/// <summary>
+/// Меню тригигонометрических функций
+/// </summary>
+/// <returns></returns>
 int menu_trig()
 {
     float x;
