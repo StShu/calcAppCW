@@ -7,13 +7,12 @@ int main()
 {
     setlocale(LC_ALL, "RUSSIAN");
     char oper;
-    
     while (true) {
         cout << "1 - Обычные функций\n2 - Тригонометрические функции 0 - " "Выход " << endl;
         cout << "Введите номер : ";
         cin >> oper;
         switch (oper) {
-        case '1': 
+        case '1':
             system("cls");
             menu_math();
             break;
