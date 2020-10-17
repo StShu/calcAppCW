@@ -1,5 +1,6 @@
 #include "functions.h"
 #include <sstream>
+#define PI 3.14159265
 
 float sum(float x, float y)
 {
@@ -62,6 +63,36 @@ int menu_math()
         cin >> oper;
 
         if (oper == 'n')
+            break;
+        system("cls");
+    }
+    return 0;
+}
+
+int menu_trig()
+{
+    float x;
+    string oper;
+
+    while (true) {
+        cout << "Доступные операции soc/sin/tg " << endl;
+        cout << "Пример ввода cos 10" << endl;
+        cout << "Введите пример: ";
+        cin >> oper >> x;
+
+        if (oper == "sin")
+            cout << sin(x * PI / 180);
+        else if (oper == "cos")
+            cout << cos(x * PI / 180);
+        else if (oper == "tg")
+            cout << tan(x * PI / 180);
+        else
+            cout << "Не верная команда!" << endl;
+
+        cout << "\n Повторить? y/n" << endl;
+        cin >> oper;
+
+        if (oper == "n")
             break;
         system("cls");
     }

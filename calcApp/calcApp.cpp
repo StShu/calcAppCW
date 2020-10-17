@@ -12,13 +12,14 @@ int main()
              << endl;
         cout << "Введите номер : ";
         cin >> oper;
+        system("cls");
         switch (oper) {
         case '1':
-            system("cls");
+            
             menu_math();
             break;
         case '2':
-            system("cls");
+            menu_trig();
             break;
         case '0':
             return 0;
