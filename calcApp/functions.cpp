@@ -19,7 +19,7 @@ float multiP(float x, float y)
 
 float divs(float x, float y)
 {
-        return x / y;
+    return x / y;
 }
 
 void coutF(float x, float y, char oper, float z)
@@ -33,7 +33,7 @@ int menu_math()
 {
     float x, y;
     char oper;
-    while (true){
+    while (true) {
         cout << "Доступные операции +,-,/,*,^" << endl;
         cout << "Пример ввода 10 + 5 " << endl;
         cout << "Введите пример: ";
