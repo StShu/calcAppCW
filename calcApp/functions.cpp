@@ -1,7 +1,6 @@
 #include "functions.h"
 #include <sstream>
 
-
 float sum(float x, float y)
 {
     return x + y;
