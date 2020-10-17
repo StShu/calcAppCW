@@ -6,11 +6,33 @@ using namespace std;
 int main()
 {
     setlocale(LC_ALL, "RUSSIAN");
+    int oper;
+    cout << "1 - Обычные операции\n2 - Тригонометрические функции 0 - Выход\n Введите номер:";
+    cin >> oper;
+    while (true) {
+        switch (oper) {
+        case 1:
+            system("cls");
+            menu_math();
+            break;
+        case 2:
+            system("cls");
+            //menu_trig();
+            break;
+        case 0:
+            return 0;
+            break;
+        default:
+            cout << "Не верный выбор !" << endl;
+            break;
+        }
 
-    float x, y;
-    cin >> x >> y;
-    cout << sum(x, y) << endl;
-    cout << divs(x, y) << endl;
-    cout << multiP(x, y) << endl;
-    cout << diff(x, y) << endl;
+        system("cls");
+        cout << "Повторить? y/n" << endl;
+        cin >> oper;
+
+        if (oper == 'n')
+            break;
+    }
+    return 0;
 }

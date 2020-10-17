@@ -14,4 +14,8 @@ float multiP(float x, float y);
 
 float divs(float x, float y);
 
-int menu();
+string coutF(float x, float y, char oper);
+
+int menu_math();
+
+int menu_trig();
