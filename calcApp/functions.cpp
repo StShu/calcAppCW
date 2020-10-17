@@ -109,7 +109,6 @@ int menu_math()
     return 0;
 }
 
-
 /// <summary>
 /// Меню тригигонометрических функций
 /// </summary>
