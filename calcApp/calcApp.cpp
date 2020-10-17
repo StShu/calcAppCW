@@ -7,7 +7,7 @@ int main()
 {
     setlocale(LC_ALL, "RUSSIAN");
     int oper;
-    cout << "1 - Обычные операции\n2 - Тригонометрические функции 0 - Выход" << endl;
+    cout << "1 - Обычные операции\n2 - Тригонометрические функции 0 - Выход " << endl;
     cout <<"Введите номер : ";
     cin >> oper;
     while (true) {
