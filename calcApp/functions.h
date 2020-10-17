@@ -13,3 +13,5 @@ float diff(float x, float y);
 float multiP(float x, float y);
 
 float divs(float x, float y);
+
+int menu();

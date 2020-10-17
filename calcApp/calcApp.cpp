@@ -12,5 +12,5 @@ int main()
     cout << sum(x, y) << endl;
     cout << divs(x, y) << endl;
     cout << multiP(x, y) << endl;
-    cout << diff(x, y) << endl;
+   cout << diff(x, y) << endl;
 }
