@@ -15,7 +15,6 @@ int main()
         system("cls");
         switch (oper) {
         case '1':
-            
             menu_math();
             break;
         case '2':
